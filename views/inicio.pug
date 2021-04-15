@@ -1,0 +1,33 @@
+extends ./layout/index
+
+block slider
+    .slider 
+        h1 Río de Janeiro 
+        em aventura
+
+block contenido
+    main.container.mt-5 
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac justo sed enim fermentum blandit. Sed iaculis, erat quis tempor aliquam, tortor dui pharetra diam, vitae eleifend lacus lacus non magna. Pellentesque eu convallis leo, eget sagittis neque. Nullam a sapien tristique, suscipit tellus id, tincidunt eros. Nam tempus vel ante vitae pellentesque.
+                p Etiam aliquet nisi sed augue consequat pulvinar eu vel justo. Aliquam purus quam, tempor nec sem nec, rutrum mollis nisl. Nulla facilisi. Etiam ut sodales sapien. Pellentesque cursus ut eros at pulvinar. Fusce vel quam et risus gravida commodo. Praesent feugiat felis vitae mi vulputate, sit amet semper risus porttitor.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros", class="img-fluid")
+
+        include ./layout/bloque_viajes
+    
+    .descuento
+        .container 
+            .row 
+                .col-md-6 
+                    .contenido 
+                        h3 5% de Descuento 
+                        p.titulo Viaje a Canada 
+                        p.fecha 14 de Abril de 2021 - 14 de Mayo de 2021
+                        p.precio $ 2,500 USD
+
+    .container 
+        h2.mt-5.text-center Testimoniales
+
+        include ./layout/bloque_testimoniales
